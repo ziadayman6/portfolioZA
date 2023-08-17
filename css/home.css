@@ -205,7 +205,8 @@ html {
 .section3 .hline1,
 .section3 .hline2,
 .section3 .hline3,
-.section3 .hline4{
+.section3 .hline4,
+.section3 .hline5{
     margin-top: 10%;
     position: relative;
     width: 100%;
@@ -217,7 +218,8 @@ html {
 .section3 .hline1::before,
 .section3 .hline2::before,
 .section3 .hline3::before,
-.section3 .hline4::before{
+.section3 .hline4::before,
+.section3 .hline5::before{
     content: "";
     position: absolute;
     height: 4px;
@@ -231,7 +233,8 @@ html {
 .section3 .hline1::after,
 .section3 .hline2::after,
 .section3 .hline3::after,
-.section3 .hline4::after{
+.section3 .hline4::after,
+.section3 .hline5::after{
     content: "";
     position: absolute;
     width: 0vw;
@@ -246,7 +249,8 @@ html {
 .section3 .hline1.animate::after,
 .section3 .hline2.animate::after,
 .section3 .hline3.animate::after,
-.section3 .hline4.animate::after{
+.section3 .hline4.animate::after,
+.section3 .hline5.animate::after{
     width: 1.5vw;
     height: 1.5vw;
 }
@@ -267,6 +271,10 @@ html {
     animation: moveline4 2s ease forwards;
 }
 
+.section3 .hline5.animate::before{
+    animation: moveline5 2s ease forwards;
+}
+
 .section3 .hline1.animate::after{
     animation: movecircle1 2s ease forwards;
 }
@@ -281,6 +289,10 @@ html {
 
 .section3 .hline4.animate::after{
     animation: movecircle4 2s ease forwards;
+}
+
+.section3 .hline5.animate::after{
+    animation: movecircle5 2s ease forwards;
 }
 
 @keyframes moveline1 {
@@ -316,6 +328,15 @@ html {
     }
     to{
         width: 60%;
+    }
+}
+
+@keyframes moveline5 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 45%;
     }
 }
 
@@ -355,6 +376,15 @@ html {
     }
 }
 
+@keyframes movecircle5 {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 40%;
+    }
+}
+
 @media (max-width:600px) {
     .section3,
     .section5{
@@ -368,14 +398,16 @@ html {
     .section3 .hline1,
     .section3 .hline2,
     .section3 .hline3,
-    .section3 .hline4{
+    .section3 .hline4,
+    .section3 .hline5{
         height: 2px;
     }
 
     .section3 .hline1::after,
     .section3 .hline2::after,
     .section3 .hline3::after,
-    .section3 .hline4::after{
+    .section3 .hline4::after,
+    .section3 .hline5::after{
         width: 0vw;
         height: 0vw;
     }
@@ -383,7 +415,8 @@ html {
     .section3 .hline1.animate::after,
     .section3 .hline2.animate::after,
     .section3 .hline3.animate::after,
-    .section3 .hline4.animate::after{
+    .section3 .hline4.animate::after,
+    .section3 .hline5.animate::after{
         width: 3vw;
         height: 3vw;
     }
@@ -391,7 +424,8 @@ html {
     .section3 .hline1::before,
     .section3 .hline2::before,
     .section3 .hline3::before,
-    .section3 .hline4::before{
+    .section3 .hline4::before,
+    .section3 .hline5::before{
         height: 3px;
     }    
 
