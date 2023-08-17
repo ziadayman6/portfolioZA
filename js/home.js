@@ -29,7 +29,7 @@ const observer = new IntersectionObserver(entries => {
 });
 
 arrow1.addEventListener('click', function() {
-    if (container1.style.height == '0px') {
+    if (container1.style.height === '0px' || !container1.style.height) {
         container1.style.transition = 'height 1s ease'
         container1.style.height = container1.scrollHeight + 'px';
         arrow1.classList.add('rotated')
@@ -41,7 +41,7 @@ arrow1.addEventListener('click', function() {
 });
 
 arrow2.addEventListener('click', function() {
-    if (container2.style.height == '0px') {
+    if (container2.style.height === '0px' || !container2.style.height) {
         container2.style.transition = 'height 1s ease'
         container2.style.height = container2.scrollHeight + 'px';
         arrow2.classList.add('rotated')
@@ -78,7 +78,7 @@ arrow2.addEventListener('click', function() {
 });
 
 arrow3.addEventListener('click', function() {
-    if (container3.style.height == '0px') {
+    if (container3.style.height === '0px' || !container3.style.height) {
         container3.style.transition = 'height 1s ease'
         container3.style.height = container3.scrollHeight + 'px';
         arrow3.classList.add('rotated')
@@ -90,7 +90,7 @@ arrow3.addEventListener('click', function() {
 });
 
 arrow4.addEventListener('click', function() {
-    if (container4.style.height == '0px') {
+    if (container4.style.height === '0px' || !container4.style.height) {
         container4.style.transition = 'height 1s ease'
         container4.style.height = container4.scrollHeight + 'px';
         arrow4.classList.add('rotated')
