@@ -503,7 +503,8 @@ hr{
     border-radius: 5px;
 }
 
-.anchor{
+.anchor,
+.anchor2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -517,16 +518,25 @@ hr{
     background-color: #0000cc;
 }
 
-.anchor i{
+.anchor2{
+    bottom: 12vw;
+}
+
+.anchor i,
+.anchor2 i{
     transform: rotate(45deg);
 }
 
 
 @media (max-width:600px){
-    .anchor{
+    .anchor,
+    .anchor2{
         padding: 2vw;
-        bottom: 65vw;
+        bottom: 64vw;
         left: 38vw;
+    }
+    .anchor2{
+        bottom: 75vw;
     }
     .section4 .parent{
         width: 90%;
