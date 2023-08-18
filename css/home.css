@@ -503,40 +503,34 @@ hr{
     border-radius: 5px;
 }
 
-.anchor,
-.anchor2{
+.anchor{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    width: fit-content;
     padding: 1vw;
     color: white;
-    position: relative;
-    right: 2.5vw;
-    bottom: 10vw;
+    position: absolute;
+    right: -1.5vw;
+    bottom: 50%;
+    transform: translateY(50%);
     border-radius: 5px;
     background-color: #0000cc;
 }
 
-.anchor2{
-    bottom: 12vw;
-}
-
-.anchor i,
-.anchor2 i{
+.anchor i{
     transform: rotate(45deg);
 }
 
 
 @media (max-width:600px){
-    .anchor,
-    .anchor2{
+    .anchor{
+        height: fit-content;
         padding: 2vw;
-        bottom: 64vw;
-        left: 38vw;
-    }
-    .anchor2{
-        bottom: 75vw;
+        bottom: calc(0px - 3.5vw);
+        left: 50%;
+        transform: translateX(-50%);
     }
     .section4 .parent{
         width: 90%;
