@@ -84,7 +84,10 @@ html {
     }
     .section1 .CV{
         font-size: 4vw;
-        padding: 2.5vw 3.5vw;
+        padding: 2.5vw 4.5vw;
+    }
+    .section1 .ParentCV{
+        margin-top: 5vw;
         margin-bottom: 10vw;
     }
 }
