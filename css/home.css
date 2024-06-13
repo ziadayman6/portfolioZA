@@ -52,6 +52,17 @@ html {
     color: #0000cc;
 }
 
+.section1 .CV{
+    font-size: 1.5vw;
+    background-color: #0000cc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 @media (max-width:600px){
     .section1{
         flex-direction: column;
@@ -70,6 +81,11 @@ html {
     }       
     .childchild{
         font-size: 7vw;
+    }
+    .section1 .CV{
+        font-size: 4vw;
+        padding: 2vw 3vw;
+        margin-bottom: 5vw;
     }
 }
 
