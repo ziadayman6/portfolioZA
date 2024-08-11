@@ -367,18 +367,13 @@ hr{
 /* ///////////////////////////////////////////////////// */
 
 .section5 .parent{
-    width: 70%;
+    width: 80%;
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.section5 form{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-}
 .section5 input:not([type = "submit"]),
 .section5 textarea{
     font-size: 1.5vw;
@@ -412,16 +407,20 @@ textarea{
     opacity: 0.5;
 }
 
-.section5 .parent div{
+.section5 .parent img{
+    width: 75%;
+}
+
+.section5 .parent .div2{
     background-color: #cccccc30;
     border-radius: 5px;
     text-align: left;
     padding: 5%;
-    width: 30%;
+    width: 35%;
     box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.section5 .parent div p{
+.section5 .parent .div2 p{
     color: #0000cc;
 }
 
@@ -430,11 +429,7 @@ textarea{
         width: 90%;
         margin-top: 10%;
         display: flex;
-        flex-direction: column-reverse;
-    }    
-    .section5 form{
-        width: 70%;
-        align-items: center;
+        flex-direction: column;
     }    
     .section5 input:not([type = "submit"]),
     .section5 textarea,
@@ -442,10 +437,14 @@ textarea{
         font-size: 4vw;
         padding: 2% 5%;
     }
-    .section5 .parent div{
+    .section5 .parent .div2{
         width: 70%;
+        margin-bottom: 5%;
+    }   
+    .section5 .parent img{
+        width: 55%;
         margin-bottom: 10%;
-    }    
+    }     
 }
 
 .up{
@@ -459,21 +458,6 @@ textarea{
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     animation: jumping 0.5s linear infinite;
-}
-
-.showw{
-    padding: 1%;
-    position: fixed;
-    text-align: center;
-    left: 50%;
-    bottom: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    font-size: 1.5vw;
-    background-color: #0000cc;
-    color: white;
-    display: none;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes jumping{
@@ -494,11 +478,6 @@ textarea{
         font-size: 3vw;
         padding: 2%;
         bottom: 3%;
-    }
-
-    .showw{
-        font-size: 5vw;
-        padding: 5%;
     }
 
     @keyframes jumping{
